@@ -1,7 +1,2 @@
 language: java 
-<<<<<<< HEAD
 jdk: oraclejdk8
-=======
-jdk: oraclejdk8
-mvn test -B
->>>>>>> 32d3793be631fb59333833cc1b076a0688a547a0
