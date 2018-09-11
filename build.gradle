@@ -11,4 +11,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-task stage(dependsOn: ['clean', 'installDist'])
+task('hello') {
+    doLast {
+        println "hello"
+    }
+}
