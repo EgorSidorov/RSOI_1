@@ -12,5 +12,5 @@ dependencies {
 }
 
 task stage {
-  dependsOn installDist
+  dependsOn 'installDist'
 }
