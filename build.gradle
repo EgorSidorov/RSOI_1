@@ -15,7 +15,7 @@ dependencies {
 apply plugin: "com.heroku.sdk.heroku-gradle"
 
 heroku {
-apiKey = '3ca3a848-725c-48df-9977-3f0695746a3c'
+ appName = "helloapp_rsoi1"
 }
 
 defaultTasks "clean", "build", "installApp"
