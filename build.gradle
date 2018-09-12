@@ -11,8 +11,3 @@ dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0' 
     testCompile 'junit:junit:4.12'
 }
-
-apply plugin: "com.heroku.sdk.heroku-gradle"
-
-
-defaultTasks "clean", "build", "installApp"
