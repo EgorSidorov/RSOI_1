@@ -14,8 +14,6 @@ dependencies {
 
 apply plugin: 'heroku'
 
-...
-
 heroku {
     //get this from heroku
     apiKey = 3ca3a848-725c-48df-9977-3f0695746a3c
@@ -27,8 +25,4 @@ heroku {
     //buildpack = 'http://somebuildpack
 }
 
-task('hello') {
-    doLast {
-        println "hello"
-    }
-}
+defaultTasks "clean", "build", "installApp"
