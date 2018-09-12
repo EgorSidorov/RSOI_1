@@ -18,4 +18,4 @@ heroku {
  appName = "helloapp_rsoi1"
 }
 
-defaultTasks "clean", "build", "installApp"
+defaultTasks "clean","stage", "build", "installApp"
