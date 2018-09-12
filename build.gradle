@@ -18,4 +18,8 @@ heroku {
  appName = "helloapp_rsoi1"
 }
 
+task stage {
+    dependsOn build
+}
+
 defaultTasks "clean","stage", "build", "installApp"
