@@ -14,10 +14,6 @@ dependencies {
 
 apply plugin: "com.heroku.sdk.heroku-gradle"
 
-heroku {
- appName = "helloapp_rsoi1"
-}
-
 task stage {
     dependsOn build
 }
