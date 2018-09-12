@@ -11,3 +11,21 @@ dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0' 
     testCompile 'junit:junit:4.12'
 }
+
+buildscript {
+    repositories {
+        ...
+        mavenCentral()
+        maven { url 'http://dl.bintray.com/vermeulen-mp/gradle-plugins' }
+    }
+    dependencies {
+        classpath "org.gradle.api.plugins:gradle-heroku:0.9.6"
+    }
+}
+
+apply plugin: "com.heroku.sdk.heroku-gradle"
+
+heroku {
+}
+
+defaultTasks "clean", "build", "installApp"
