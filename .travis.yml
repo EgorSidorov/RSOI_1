@@ -1,6 +1,2 @@
 language: java 
 jdk: oraclejdk8
-deploy:
-  provider: heroku
-  api_key: '3e4be074-d6e5-499d-a42c-8673b2c5888f'
-  app: helloapp_rsoi1
