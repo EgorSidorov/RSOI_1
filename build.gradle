@@ -15,14 +15,7 @@ dependencies {
 apply plugin: 'heroku'
 
 heroku {
-    //get this from heroku
     apiKey = 3ca3a848-725c-48df-9977-3f0695746a3c
-
-    //set this on first run if you don't want a generated name
-    //appName = 'some-unique-app-name'
-
-    //set this if you are not happy with the default gradlew buildpack
-    //buildpack = 'http://somebuildpack
 }
 
 defaultTasks "clean", "build", "installApp"
