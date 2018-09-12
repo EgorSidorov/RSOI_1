@@ -1,13 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven { url 'http://dl.bintray.com/vermeulen-mp/gradle-plugins' }
-    }
-    dependencies {
-        classpath "org.gradle.api.plugins:gradle-heroku:0.9.6"
-    }
-}
-
 plugins {
     id 'war'  
     id "com.heroku.sdk.heroku-gradle" version "1.0.4"
