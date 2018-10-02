@@ -21,24 +21,25 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <build>
 	<finalName>exampleweb_rsoi1</finalName>
 <plugins>
-       <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>2.3</version>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>appassembler-maven-plugin</artifactId>
+            <version>1.1.1</version>
+            <configuration>
+                <assembleDirectory>target</assembleDirectory> 
+                <programs>
+                    <program>
+                        <mainClass>Main.Main</mainClass>
+                        <name>webapp</name>
+                    </program>
+                </programs>
+            </configuration>
             <executions>
                 <execution>
                     <phase>package</phase>
-                    <goals><goal>copy</goal></goals>
-                    <configuration>
-                        <artifactItems>
-                            <artifactItem>
-                         <groupId>com.github.jsimone</groupId>
-                        <artifactId>webapp-runner</artifactId>
-                                <version>8.0.30.2</version>
-                     <destFileName>webapp-runner.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>
-                    </configuration>
+                    <goals>
+                        <goal>assemble</goal>
+                    </goals>
                 </execution>
             </executions>
         </plugin>
