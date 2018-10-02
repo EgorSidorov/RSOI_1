@@ -18,6 +18,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <scope>test</scope>
 </dependency>
 </dependencies>
+<build>
 <plugins>
        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -40,5 +41,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 </execution>
             </executions>
         </plugin>
+</build>
 </plugins>
 </project>
