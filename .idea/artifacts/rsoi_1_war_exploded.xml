@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="rsoi_1" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.8.2" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/my-app-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
