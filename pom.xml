@@ -27,7 +27,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <configuration>
             <appName>rsoi1_testapp</appName>
             <processTypes>
-                <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Registration</web>
+                <web>java $JAVA_OPTS -cp target/classes:target/dependency/* -cp ./web:target/dependency/* Registration</web>
             </processTypes>
         </configuration>
     </plugin>
