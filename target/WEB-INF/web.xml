@@ -5,13 +5,12 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
            version="3.1">
     <servlet>
-        <servlet-name>Main</servlet-name>
-        <servlet-class>hello</servlet-class>
-        <load-on-startup>1</load-on-startup>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>Main</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Main</servlet-name>
+        <servlet-name>hello</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>

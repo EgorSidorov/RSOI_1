@@ -1,4 +1,4 @@
-import javax.servlet.ServletException;
+﻿import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -90,8 +90,8 @@ class UserInfo
     }
 }
 
-@WebServlet(name = "hello")
-public class hello extends HttpServlet {
+@WebServlet(name = "Main")
+public class Main extends HttpServlet {
     static String response_string =
             "<form name=\"test\" method=\"post\" action=\"/\">"+
             "  <p><b>Тип запроса:</b><Br>\n" +
