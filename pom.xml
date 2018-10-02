@@ -20,6 +20,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 </dependencies>
 <build>
 <plugins>
+	<finalName>exampleweb_rsoi1</finalName>
        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
@@ -41,6 +42,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 </execution>
             </executions>
         </plugin>
-</build>
 </plugins>
+</build>
 </project>
