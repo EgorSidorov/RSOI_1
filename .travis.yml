@@ -2,8 +2,4 @@ language: java
 jdk: oraclejdk8
 deploy:
   provider: heroku
-  api_key:
-    secure: KEY
-  app: rsoi-1-egor
-  on:
-    repo: EgorSidorov/RSOI_1
+  api_key: 98c9c89c-b9e1-43cd-b1eb-29647c824147
